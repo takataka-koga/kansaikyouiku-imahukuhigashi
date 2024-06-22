@@ -1,0 +1,482 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
+      sans-serif;
+}
+#logo img {
+    width: 300px;
+    height: auto;
+}
+p {
+  font-size: 15px;
+}
+.container {
+  border: 2px solid red;
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.edit-input {
+  display: none;
+}
+.arrow-right {
+  color: #2710d5;
+}
+
+#submit {
+  margin-top: 50px;
+}
+/*================
+ PC用のスタイル
+=================*/
+@media screen and (min-width: 768px) {
+  /* 横幅設定 */
+  body {
+      max-width: 1080px;
+      min-width: 900px;
+      margin: 0 auto 0 auto;
+  }
+
+  /* ヘッダー */
+  header {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  /* ナビゲーションのレイアウト */
+  #nav-pc {
+      font-size: 14px;
+      padding-top: 15px;
+  }
+
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav-pc > a {
+      text-decoration: none;
+      margin-left: 20px;
+  }
+  #nav-pc > a:link {
+      color: #0d0d0d;
+  }
+  #nav-pc > a:visited {
+      color: #0d0d0d;
+  }
+  #nav-pc > a:hover {
+      color: #0d0d0d;
+      text-decoration: underline;
+  }
+  #nav-pc > a:active {
+      color: #0d0d0d;
+  }
+
+  /* スマホ用ナビを非表示 */
+  #nav-sp,
+  #menu-sp {
+      display: none;
+  }
+}
+    /* メインビジュアル*/
+    #main-visual {
+      position: relative;
+      height: 400px;
+  }
+  #main-message {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #2710d5;
+      color: #ffffff;
+      border-radius: 0 0 476px 0;
+      max-width: 620px;
+      height: 100%;
+      width: 100%;
+      z-index: 11;
+  }
+  #main-message > h1 {
+      font-size: 60px;
+      font-weight: bold;
+      margin: 100px 0 0 50px;
+  }
+
+  #main-message > p {
+      font-size: 28px;
+      margin: 0 0 0 50px;
+  }
+  #main-visual > img {
+      max-width: 620px;
+      border-radius: 476px 0 0 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+  }
+      /*見出し*/
+      h2 {
+        margin: 40px 0 0 0;
+    }
+
+    h2::after {
+        content: url("images/line.png");
+        margin-left: 10px;
+    }
+
+    h3 {
+        font-size: 27px;
+    }
+
+    /* テーブル全体のスタイル */
+    #cashtable {
+      width: 100%;
+      border-collapse: collapse; /* セル間の余白をなくす */
+  }
+    /*会社概要*/
+    #school {
+      margin: 80px auto 80px auto;
+  }
+
+  #school-table {
+      width: 100%;
+  }
+
+  .tableheader {
+      text-align: left;
+      padding: 20px;
+      border-bottom-color: #2710d5;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      width: 100px;
+  }
+
+  .tableheader-first {
+      text-align: left;
+      padding: 20px;
+      border-bottom-color: #2710d5;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-top-color: #2710d5;
+      border-top-width: 1px;
+      border-top-style: solid;
+      width: 100px;
+  }
+
+  .cell {
+      padding: 30px;
+      border-bottom-color: #ececec;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+  }
+  .cell-first {
+      padding: 30px;
+      border-bottom-color: #ececec;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-top-color: #ececec;
+      border-top-width: 1px;
+      border-top-style: solid;
+  }
+
+  #school > iframe {
+      width: 100%;
+      height: 368px;
+      margin-top: 40px;
+  }
+    /* フッター */
+    footer {
+      background-color: #0d0d0d;
+      text-align: center;
+      padding: 80px 80px 15px 80px;
+  }
+
+  #footer-logo {
+      margin-bottom: 30px;
+  }
+
+  #footer-link {
+      margin-bottom: 50px;
+  }
+  #footer-link > a {
+      text-decoration: none;
+      margin: 10px;
+  }
+  #footer-link > a:link {
+      color: #ffffff;
+  }
+  #footer-link > a:visited {
+      color: #ffffff;
+  }
+  #footer-link > a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+  }
+  #footer-link > a:active {
+      color: #ffffff;
+  }
+  .banner {
+    background-color: #f1c40f;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px;
+    display: none;  /* 初期状態では非表示 */
+  }
+ #hitext{
+  border: 2px solid blue; /* 青い枠 */
+  padding: 10px; /* 内側の余白 */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 影 */
+}
+
+/*====================
+ スマートフォン用のスタイル
+=====================*/
+@media screen and (max-width: 767px) {
+  body {
+      min-width: 375px;
+      margin: 0;
+  }
+
+  /* PC用ナビゲーション非表示 */
+  #nav-pc {
+      display: none;
+  }
+
+  /* ハンバーガーメニュー */
+  #menu-sp {
+      float: right;
+      padding: 0;
+  }
+
+  /* スマホ用ナビゲーションの表示切替*/
+    /* 初期状態、レイアウトと非表示設定 */
+    #nav-sp {
+        background-color: #2710d5;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: none;
+        z-index: 100;
+    }
+
+    /* ×ボタン */
+    #close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    /* ナビゲーションメニュー用ロゴ */
+    #logo-sp {
+        margin: 80px 0 30px 20px;
+    }
+
+    /* ナビゲーションのリンクの装飾設定 */
+    #nav-sp > a {
+        display: block;
+    }
+
+    #nav-sp > a:link {
+        color: #ffffff;
+    }
+    #nav-sp > a:visited {
+        color: #ffffff;
+    }
+    #nav-sp > a:hover {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+    #nav-sp > a:active {
+        color: #ffffff;
+    }
+
+    #nav-sp > .menu {
+        text-decoration: none;
+        display: block;
+        margin: 0 20px 0 20px;
+        height: 44px;
+        font-size: 16px;
+        background-image: url("images/arrow.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    /* メインビジュアル */
+    #main-visual {
+      position: relative;
+      height: 470px;
+      width: 100%;
+      overflow: hidden;
+  }
+    /* メインビジュアル */
+    #main-visual {
+        position: relative;
+        height: 470px;
+        width: 100%;
+        overflow: hidden;
+    }
+    #main-visual > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #2710d5;
+        color: white;
+        border-radius: 0 0 476px 0;
+        text-align: center;
+        height: 280px;
+        width: 100%;
+        z-index: 11;
+    }
+    #main-visual > div > h1 {
+        font-size: 22px;
+        margin: 90px 0 0 0;
+    }
+
+    #main-visual > div > p {
+        margin: 0;
+    }
+
+    #main-visual > img {
+        width: 100%;
+        border-radius: 476px 0 0 0;
+
+        z-index: 10;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    /*見出し*/
+    h2::after {
+        content: url("images/line.png");
+        margin-left: 10px;
+
+    }
+
+    h3 {
+        font-size: 20px;
+        margin: 10px 0 0 0;
+    }
+    /* テーブル全体のスタイル */
+    #cashtable {
+      width: 100%;
+      border-collapse: collapse; /* セル間の余白をなくす */
+  }
+    /*会社概要*/
+    #school {
+        margin: 0 20px 0 20px;
+    }
+
+    #school > h3 {
+        margin-bottom: 20px;
+    }
+
+    #school-table {
+        width: 100%;
+    }
+
+    .tableheader-first {
+        text-align: left;
+        padding: 20px;
+        border-bottom-color: #2710d5;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-top-color: #2710d5;
+        border-top-width: 1px;
+        border-top-style: solid;
+        width: 50px;
+    }
+    .tableheader {
+        text-align: left;
+        padding: 20px;
+        border-bottom-color: #2710d5;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        width: 50px;
+    }
+
+    .cell-first {
+        padding: 20px;
+        border-bottom-color: #ececec;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-top-color: #ececec;
+        border-top-width: 1px;
+        border-top-style: solid;
+    }
+    .cell {
+        padding: 20px;
+        border-bottom-color: #ececec;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
+    #school > iframe {
+        width: 100%;
+        height: 240px;
+        margin: 40px 0 0 0;
+    }
+    /* フッター */
+    footer {
+        background-color: #0d0d0d;
+        padding: 30px 20px 50px 20px;
+    }
+
+    #footer-logo {
+        margin-bottom: 30px;
+    }
+
+    #footer-link {
+        margin-bottom: 50px;
+    }
+    #footer-link > a {
+        text-decoration: none;
+        margin: 0 20px 30px 0;
+        display: block;
+
+        background-image: url("images/arrow.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    #footer-link > a:link {
+        color: #ffffff;
+    }
+    #footer-link > a:visited {
+        color: #ffffff;
+    }
+    #footer-link > a:hover {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+    #footer-link > a:active {
+        color: #ffffff;
+    }
+  .banner {
+    background-color: #f1c40f;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px;
+    display: none;  /* 初期状態では非表示 */
+  }
+#hitext{
+  border: 2px solid blue; /* 青い枠 */
+  padding: 10px; /* 内側の余白 */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* 影 */
+}
+}
