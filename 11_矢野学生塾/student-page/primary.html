@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>進学教室関西教育アカデミー小学生の方へ</title>
+    <meta charset="utf-8">
+    <meta name="description" content="小学生の生徒に向けたお知らせの案内です。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <!-- ロゴ -->
+        <a href="index.html" id="logo"><img src="images/index/logo-2.png" alt="トップページに戻る"></a>
+
+        <!-- PC用ナビゲーション -->
+        <nav id="nav-pc">
+            <a href="primary.html">小学生の方へ</a>
+            <a href="junior.html">中学生の方へ</a>
+            <a href="junior_s.html">中学生Sの方へ</a>
+            <a href="high.html">高校生の方へ</a>
+            <a href="index.html#school">アクセス</a>
+        </nav>
+
+        <!-- スマホ用メニューボタン -->
+        <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く"
+            onclick="document.getElementById('nav-sp').style.display = 'block'">
+
+        <!-- スマホ用ナビゲーション -->
+        <nav id="nav-sp">
+            <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる"
+                onclick="document.getElementById('nav-sp').style.display = 'none'">
+            <a class="menu" href="primary.html"
+                onclick="document.getElementById('nav-sp').style.display = 'none'">小学生の方へ</a>
+            <a class="menu" href="junior.html"
+                onclick="document.getElementById('nav-sp').style.display = 'none'">中学生の方へ</a>
+                <a class="menu" href="junior_s.html"
+                    onclick="document.getElementById('nav-sp').style.display = 'none'">中学生Sの方へ</a>
+            <a class="menu" href="high.html"
+                onclick="document.getElementById('nav-sp').style.display = 'none'">高校生の方へ</a>
+            <a class="menu" href="index.html#school"
+                onclick="document.getElementById('nav-sp').style.display = 'none'">アクセス</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section id="main-visual">
+                <div id="main-message">
+                    <h1>小学生の方へ</h1>
+                    <p>目標中学に合わせた個別指導<br>
+                      徹底した演習と暗記で確実に実力UP!<br>
+                      </p>
+                </div>
+                <img id="main-visual" src="images/index/pri-1.jpg" alt="学習する小学生">
+            </section>
+            <section>
+                <h2>お知らせ</h2>
+                <input type="text" id="notificationInput" placeholder="お知らせを入力">
+                <button onclick="addRow('notificationTable')">追加</button>
+                <table id="notificationTable">
+                    <thead>
+                        <tr>
+                            <th>要件</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- ここに追加される行が表示される -->
+                    </tbody>
+                </table>
+                
+                <h2>授業料</h2>
+                <input type="text" id="tuitionInput" placeholder="授業料を入力">
+                <button onclick="addRow('tuitionTable')">追加</button>
+                <table id="tuitionTable">
+                    <thead>
+                        <tr>
+                            <th>要件</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- ここに追加される行が表示される -->
+                    </tbody>
+                </table>
+            </section>
+                </article>
+        <footer>
+            <div id="footer-link">
+                <a href="index.html">ホームへ</a>
+                <a href="primary.html">小学生の方へ</a>
+                <a href="junior.html">中学生の方へ</a>
+                <a href="junior_s.html">中学生Sの方へ</a>
+                <a href="high.html">高校生の方へ</a>
+                <a href="index.html#school">アクセス</a>
+            </div>
+        </footer>
+            <!-- JavaScriptファイルの読み込み -->
+        <script src="script.js"></script>
+     </main>
+</body>
+
+</html>
